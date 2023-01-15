@@ -5,12 +5,14 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h1 {
     display: flex;
     justify-content: center;
-    color: rgb(170, 114, 41);
+    color: rgb(123, 0, 0);
+    background-color: gold;
     font-size: 44px;
 }
 
@@ -18,9 +20,13 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     color: orange;
     font-size: 28px;
+}
+
+a:hover {
+    color: rgb(123, 0, 0);
 }
 
 .welcome, .body {
@@ -32,6 +38,10 @@ h1 {
     color: wheat;
     font-size: larger;
     font-style: bold;
+}
+
+.welcome {
+    margin-top: 50px;
 }
 
 .welcome {
@@ -53,4 +63,38 @@ h1 {
     width: 200px;
     height: auto;
     border-radius: 50%;
+}
+
+.kid {
+    width: 416px;
+    height: auto;
+}
+
+.curly {
+    width: 416px;
+    height: 272px;
+}
+
+.columns {
+    display: flex;
+    flex: 0 1 auto;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.column>div{
+    background-color: white;
+    color: #002a86;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    padding: 2rem;
+    font-weight: bold;
+    width: 352px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
