@@ -29,7 +29,7 @@ a:hover {
     color: rgb(123, 0, 0);
 }
 
-.welcome, .body {
+.welcome, .body, .info {
     display: flex;
     justify-content: center;
     flex: auto;
@@ -38,6 +38,12 @@ a:hover {
     color: wheat;
     font-size: larger;
     font-style: bold;
+}
+
+.info {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 80px;
 }
 
 .welcome {

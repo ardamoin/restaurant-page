@@ -3,6 +3,7 @@ import Icon from './favicon.png';
 import Gus from './gus.jpg';
 import about from './about';
 import menuFnc from './menu';
+import contactFnc from './contact';
 
 export default function index() {
     document.body.replaceChildren();
@@ -36,8 +37,9 @@ export default function index() {
     homeWelcomeDiv.textContent = 'Welcome to Los Pollos Hermanos';
     homeBodyDiv.textContent = "It's the best ingredients. The spiciest spices. All prepared with loving care! And always delivered with a friendly smile. That's the Los Pollos Hermanos promise. - Gus Fring, Owner and Proprietor";
 
-    aboutUs.addEventListener('click', about);
     menu.addEventListener('click', menuFnc);
+    contact.addEventListener('click', contactFnc);
+    aboutUs.addEventListener('click', about);
 
     document.head.appendChild(iconLink);
     document.body.appendChild(content);

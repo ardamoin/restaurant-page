@@ -4,6 +4,7 @@ import kid from './kid.jpg';
 import Icon from './favicon.png';
 import index from './index.js';
 import menuFnc from './menu';
+import contactFnc from './contact';
 
 export default function about() {
     document.body.replaceChildren();
@@ -53,6 +54,7 @@ export default function about() {
 
     home.addEventListener('click', index);
     menu.addEventListener('click', menuFnc);
+    contact.addEventListener('click', contactFnc);
 
     links.appendChild(home);
     links.appendChild(menu);

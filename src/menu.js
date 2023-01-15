@@ -3,6 +3,7 @@ import Icon from './favicon.png';
 import Menu from './menu.jpg';
 import index from '.';
 import about from './about';
+import contactFnc from './contact';
 
 export default function menuFnc() {
     document.body.replaceChildren();
@@ -31,6 +32,7 @@ export default function menuFnc() {
     aboutUs.textContent = 'About Us';
 
     home.addEventListener('click', index);
+    contact.addEventListener('click', contactFnc);
     aboutUs.addEventListener('click', about);
 
     links.appendChild(home);
@@ -41,6 +43,6 @@ export default function menuFnc() {
     content.appendChild(menuHeader);
     content.appendChild(links);
     content.appendChild(menuDiv);
-    document.head.appendChild(iconLink)
+    document.head.appendChild(iconLink);
     document.body.appendChild(content);
 }
