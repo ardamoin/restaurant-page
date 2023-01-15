@@ -2,8 +2,11 @@ import './style.css';
 import curly from './curly.jpg';
 import kid from './kid.jpg';
 import Icon from './favicon.png';
+import index from './index.js';
+import menuFnc from './menu';
 
 export default function about() {
+    document.body.replaceChildren();
     const iconLink = document.createElement('link');
     iconLink.rel = 'icon';
     iconLink.href = Icon;
@@ -47,6 +50,9 @@ export default function about() {
     menu.textContent = 'Menu';
     contact.textContent = 'Contact';
     aboutUs.textContent = 'About Us';
+
+    home.addEventListener('click', index);
+    menu.addEventListener('click', menuFnc);
 
     links.appendChild(home);
     links.appendChild(menu);
